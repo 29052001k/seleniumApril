@@ -10,6 +10,7 @@ public class loginValidation {
 		// TODO Auto-generated method stub
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hello\\Desktop\\chromedriver\\chromedriver.exe");
+	
 		
 		ChromeDriver driver=new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -21,8 +22,8 @@ public class loginValidation {
 		WebElement login=driver.findElement(By.cssSelector("button[type=\"submit\"]"));
 	
 		
-		username.sendKeys("Admin");
-		password.sendKeys("admin123");
+//		username.sendKeys("Admin");
+//		password.sendKeys("admin123");
 		//login.click();
 		
 		// invalid password
@@ -86,7 +87,9 @@ public class loginValidation {
 		else {
 			System.out.println("test case fail");
 		}
+	
 		
+		driver.quit();
 	}
 
 }
