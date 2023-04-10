@@ -10,8 +10,6 @@ public class webElementMethods {
 		// TODO Auto-generated method stub
 
        System.setProperty("webdriver.chrome.driver", "C:\\Users\\hello\\Desktop\\chromedriver\\chromedriver.exe");
-	
-		
 		ChromeDriver driver=new ChromeDriver();
 		//driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
 		
@@ -44,11 +42,13 @@ public class webElementMethods {
 		
 		// program 2
 		
+		// isselected()/isEnabled()
 		driver.get("http://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
-		
 		System.out.println(driver.findElement(By.cssSelector("input[value=\"lettuce\"]")).isSelected());
 		System.out.println(driver.findElement(By.cssSelector("input[value=\"cabbage\"]")).isEnabled());
 		System.out.println(driver.findElement(By.cssSelector("input[value=\"pumpkin\"]")).isEnabled());
+		
+		driver.quit();
 	
 	}
 

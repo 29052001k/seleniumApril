@@ -10,8 +10,8 @@ public class Locators {
 		// TODO Auto-generated method stub
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\hello\\Desktop\\chromedriver\\chromedriver.exe");
-		
 		ChromeDriver driver=new ChromeDriver();
+		
 		driver.get("http://127.0.0.1:5500/index.html");
 		
 		// locator by id
